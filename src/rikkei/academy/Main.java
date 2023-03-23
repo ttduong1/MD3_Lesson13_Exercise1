@@ -34,9 +34,21 @@ public class Main {
             list.clear();
         }
         // Hiển thị chuỗi tăng dần dài nhất
-        for(Character ch: max){
+        for (Character ch : max) {
             System.out.println(ch);
         }
         System.out.println();
+
+        /** Độ phức tạp của bài toán:
+         Theo đề ra:
+         1 vòng lặp ngoài = n
+         1 vòng lặp trong = n -1
+         1 câu lệnh = 1
+         Mà : 1 vòng lặp * 1 câu lệnh = 1 * 1 = 1
+         => Ta có : T(n) = (n * (n-1)) + (1 + 1)
+         => T(n) = O(n^2) + O(1)
+         <=> T(n) = O(n^2)
+         Vậy độ phức tạp củ bài toán này là O(n^2)
+         **/
     }
 }
